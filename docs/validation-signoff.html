@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PXOL Validation Sign-off</title><link rel="stylesheet" href="style.css"></head><body>
+<header class="hero"><div class="wrap"><div class="eyebrow">PXOL EXTERNAL VALIDATION</div><h1>Validation Sign-off</h1><p class="lead">Formally record the environment, protocol completion and independent findings for the PXOL version you tested.</p></div></header>
+<main class="wrap"><section class="form-card">
+<div class="row"><div><label>Validator name or ID</label><input id="validator"></div><div><label>Organisation</label><input id="org"></div></div>
+<div class="row"><div><label>PXOL version</label><input id="version" value="1.0"></div><div><label>Commit or checksum</label><input id="checksum"></div></div>
+<div class="row"><div><label>Python version</label><input id="python"></div><div><label>Operating system</label><input id="os"></div></div>
+<label>Hardware</label><input id="hardware"><h2>Protocol outcomes</h2>
+<div class="checklist">
+<div><label>Installation</label><select id="r0"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Reproducibility</label><select id="r1"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Functional behaviour</label><select id="r2"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Memory continuity</label><select id="r3"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Restart persistence</label><select id="r4"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Revision behaviour</label><select id="r5"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Regulation</label><select id="r6"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+<div><label>Ablation response</label><select id="r7"><option>Pass</option><option>Fail</option><option>Partial</option><option>Inconclusive</option></select></div>
+</div>
+<label>Protocol deviations</label><textarea id="deviations"></textarea><label>Overall conclusion</label><textarea id="conclusion"></textarea>
+<div class="checkitem"><input type="checkbox" id="declare"><label for="declare" style="margin:0">I confirm that I tested the stated PXOL version using the supplied external validation protocol and have reported positive, negative and inconclusive findings, including any protocol deviations.</label></div>
+<div class="actionbar"><button class="primary" onclick="buildSignoff()">Generate sign-off record</button><a class="btn secondary" href="../validation_results/README.md">Open submission instructions</a></div>
+<pre id="output">Your generated sign-off record will appear here.</pre></section></main>
+<footer><div class="wrap"><a href="index.html">Back to validator portal</a></div></footer>
+<script>
+function v(id){return document.getElementById(id).value.trim()}
+function buildSignoff(){if(!document.getElementById('declare').checked){alert('Please confirm the declaration before generating sign-off.');return}
+const names=['Installation','Reproducibility','Functional behaviour','Memory continuity','Restart persistence','Revision behaviour','Regulation','Ablation response'];
+let results=names.map((n,i)=>'- '+n+': '+document.getElementById('r'+i).value).join('\n');
+const d=new Date().toISOString().slice(0,10);
+const t='# PXOL External Validation Sign-off\n\n**Validator:** '+v('validator')+'\n**Organisation:** '+v('org')+'\n**PXOL version:** '+v('version')+'\n**Commit or checksum:** '+v('checksum')+'\n**Python version:** '+v('python')+'\n**Operating system:** '+v('os')+'\n**Hardware:** '+v('hardware')+'\n**Date:** '+d+'\n\n## Validation outcomes\n'+results+'\n\n## Protocol deviations\n'+(v('deviations')||'None stated')+'\n\n## Overall conclusion\n'+v('conclusion')+'\n\n## Declaration\nI confirm that I tested the stated PXOL version using the supplied external validation protocol. I have reported positive, negative and inconclusive findings, including any deviations from the protocol.\n\n**Signed by:** '+v('validator')+'\n**Date:** '+d+'\n';document.getElementById('output').textContent=t}
+</script></body></html>
