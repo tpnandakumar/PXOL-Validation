@@ -1,0 +1,1 @@
+validator_id,organisation,date_utc,pxol_version,commit_or_checksum,python_version,os,hardware,configuration,seed,benchmark,case_id,baseline_metric,pxol_metric,delta,runtime_seconds,state_retained,restart_continuity,result_status,error_or_failure,protocol_deviation,notes
