@@ -17,8 +17,8 @@
 </div>
 <label>Protocol deviations</label><textarea id="deviations"></textarea><label>Overall conclusion</label><textarea id="conclusion"></textarea>
 <div class="checkitem"><input type="checkbox" id="declare"><label for="declare" style="margin:0">I confirm that I tested the stated PXOL version using the supplied external validation protocol and have reported positive, negative and inconclusive findings, including any protocol deviations.</label></div>
-<div class="actionbar"><button class="primary" onclick="buildSignoff()">Generate sign-off record</button><a class="btn secondary" href="../validation_results/README.md">Open submission instructions</a></div>
-<pre id="output">Your generated sign-off record will appear here.</pre></section></main>
+<div class="actionbar"><button class="primary" onclick="buildSignoff()">Generate sign-off record</button><a class="btn secondary" href="https://github.com/tpnandakumar/PXOL-Validation/tree/main/validation_results" target="_blank" rel="noopener">Open Validation Results Folder</a></div>
+<p class="note">After generating the sign-off record, create a unique folder under <code>validation_results/</code> and submit the sign-off with your result files and evidence by pull request.</p><pre id="output">Your generated sign-off record will appear here.</pre></section></main>
 <footer><div class="wrap"><a href="index.html">Back to validator portal</a></div></footer>
 <script>
 function v(id){return document.getElementById(id).value.trim()}
