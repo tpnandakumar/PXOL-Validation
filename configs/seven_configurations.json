@@ -1,0 +1,12 @@
+{
+  "release": "PXOL 1.0 Experimental Research Release",
+  "configurations": [
+    {"id":"C1","name":"Core","purpose":"Core PXOL pipeline with standard defaults"},
+    {"id":"C2","name":"Context","purpose":"Emphasise context and situation handling"},
+    {"id":"C3","name":"Ecology","purpose":"Emphasise ecological state and interaction"},
+    {"id":"C4","name":"ContinuousLearning","purpose":"Exercise retained learning and update behaviour"},
+    {"id":"C5","name":"SelfModel","purpose":"Exercise self-model and competence awareness components"},
+    {"id":"C6","name":"Regulated","purpose":"Exercise regulation, revision and evidence-sensitive update"},
+    {"id":"C7","name":"Unified","purpose":"All principal PXOL mechanisms active together"}
+  ]
+}
