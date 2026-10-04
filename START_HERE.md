@@ -12,9 +12,9 @@ Use **PXOL_1.0_External_Validation_Workbook.csv** to record results.
 
 ### 3. Runnable PXOL validator
 
-**Windows download:** https://github.com/user-attachments/files/33021535/PXOL_Validator_Windows.zip
+**Windows download:** https://github.com/tpnandakumar/PXOL-Validation/releases/download/v1.0-validator/PXOL_Validator.exe
 
-Download the ZIP, extract it and run `PXOL_Validator.exe`.
+Download and run `PXOL_Validator.exe`.
 
 **Do not attempt to validate PXOL from README.md alone.**
 
