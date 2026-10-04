@@ -11,7 +11,10 @@ Open **PROTOCOL.md** to see the fixed tests and reporting rules.
 Use **PXOL_1.0_External_Validation_Workbook.csv** to record results.
 
 ### 3. Runnable PXOL validator
-A runnable black-box PXOL validation build is required to execute the tests.
+
+**Windows download:** https://github.com/user-attachments/files/33021535/PXOL_Validator_Windows.zip
+
+Download the ZIP, extract it and run `PXOL_Validator.exe`.
 
 **Do not attempt to validate PXOL from README.md alone.**
 
