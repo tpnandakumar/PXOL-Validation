@@ -1,0 +1,98 @@
+[
+  {
+    "comparison": "DELTA__VCG__accuracy",
+    "mean": 0.07103147085797495,
+    "sd": 0.04137468005388953,
+    "ci95_low": 0.05622573174892637,
+    "ci95_high": 0.08583720996702353,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__VCG__efficiency",
+    "mean": 0.11233666488770148,
+    "sd": 0.07292241571636449,
+    "ci95_low": 0.08624171355776172,
+    "ci95_high": 0.13843161621764125,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__DvD__accuracy",
+    "mean": 0.019001002596216992,
+    "sd": 0.04840331022443473,
+    "ci95_low": 0.0016801004825593366,
+    "ci95_high": 0.03632190470987465,
+    "status": "WATCH"
+  },
+  {
+    "comparison": "DELTA__DvD__efficiency",
+    "mean": 0.5991445621790834,
+    "sd": 0.11565114752122847,
+    "ci95_low": 0.5577593305439101,
+    "ci95_high": 0.6405297938142567,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__PFLOX_frontload__accuracy",
+    "mean": 0.01705165824193241,
+    "sd": 0.031883455646453,
+    "ci95_low": 0.005642310167664267,
+    "ci95_high": 0.02846100631620055,
+    "status": "WATCH"
+  },
+  {
+    "comparison": "DELTA__PFLOX_frontload__efficiency",
+    "mean": 0.11448824387410958,
+    "sd": 0.05057785555633062,
+    "ci95_low": 0.09638919070712859,
+    "ci95_high": 0.13258729704109057,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__Multidimensional_memory__accuracy",
+    "mean": 0.01814037308097942,
+    "sd": 0.041946867164221496,
+    "ci95_low": 0.003129879444135064,
+    "ci95_high": 0.033150866717823774,
+    "status": "WATCH"
+  },
+  {
+    "comparison": "DELTA__Multidimensional_memory__efficiency",
+    "mean": 0.14133857693267007,
+    "sd": 0.06842263184729114,
+    "ci95_low": 0.11685385258033669,
+    "ci95_high": 0.16582330128500344,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__P5D_zD__accuracy",
+    "mean": 0.11709358458722033,
+    "sd": 0.04013500013539163,
+    "ci95_low": 0.10273145923973076,
+    "ci95_high": 0.1314557099347099,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__P5D_zD__efficiency",
+    "mean": 0.2073690268678951,
+    "sd": 0.07569799117922751,
+    "ci95_low": 0.18028084861445764,
+    "ci95_high": 0.23445720512133256,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__FULL_vs_BASELINE__accuracy",
+    "mean": 0.1928197979428896,
+    "sd": 0.044012349480404625,
+    "ci95_low": 0.1770701809516669,
+    "ci95_high": 0.20856941493411227,
+    "status": "PASS"
+  },
+  {
+    "comparison": "DELTA__FULL_vs_BASELINE__efficiency",
+    "mean": 1.2973746221573297,
+    "sd": 0.1562083052635381,
+    "ci95_low": 1.2414761980151678,
+    "ci95_high": 1.3532730462994915,
+    "status": "PASS"
+  }
+]
